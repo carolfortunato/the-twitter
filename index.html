@@ -8,7 +8,6 @@
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
   <link href="https://file.myfontastic.com/itB5qJBMGkViNxiEcarVea/icons.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
-  <script src="main.js"></script>
 </head>
 <body>
   <header class="header">
@@ -22,15 +21,16 @@
     </section>
     <section class="tweet-box">
       <form>
-          <textarea class="tweet-message" cols="50" placeholder="O que está acontecendo?"></textarea>
-          <button onclick="twitter(); return false"> Tweet </button>
+          <textarea id="tweet-message" cols="50" placeholder="O que está acontecendo?"></textarea>
+          <p id="wordCount"> 140 </p>
+          <button id="button" onclick="twitter(); return false"> Tweet </button>
       </form>
     </section>
   </div>
    <section class="posts">
      <lu id="timeline"> 
-
      </lu>
    </section>
+   <script src="main.js"></script>
 </body>
 </html>
