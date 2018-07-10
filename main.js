@@ -4,7 +4,7 @@ var tweet = document.getElementById('tweet-message');
 
 var wordCount = document.getElementById('wordCount');
 
-tweet.addEventListener('keyup', counter); // NÃO ESTÁ FUNCIONANDO
+tweet.addEventListener('keyup', counter);
 
 function twitter() {
   var today = ' (posted on ' + new Date(); + ' )';
@@ -16,11 +16,17 @@ function twitter() {
   document.getElementById('tweet-message').value = '';
 }
 
-function counter() {   // NÃO ESTÁ FUNCIONANDO
-  document.getElementById('button').removeAttribute('disabled');
+function counter() {   // imprime no console, mas não imprime no html
+  var max = 140;
   var characters = document.getElementById('tweet-message').value.split('');
-  if (characters.length < 0 || characters.length > 140) {
-    wordCount.innerText = 140 - characters.lenght;
+  wordCount.innerHTML = max;
+
+  if (tweet.value !== "" && characters.length <= 140) {
+    document.getElementById('button').removeAttribute('disabled');
+    wordCount.innerHTML = parseInt(max - characters.lenght);
+  } else if (characters.length > 140) {
+    wordCount.innerHTML = parseInt(max - characters.lenght);
+    document.getElementById('button').setAttribute('disabled', 'true');
   }
-  console.log(140 - characters.length);
+  console.log(max - characters.length);
 }
