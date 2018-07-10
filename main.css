@@ -66,7 +66,9 @@ h1{
   font-weight: bold;
   font-size: 18px;
 }
-
+#wordCount {
+  font-weight: bold;
+}
 .posts {
   justify-content: center;
   box-sizing: border-box;
