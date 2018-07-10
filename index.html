@@ -21,7 +21,7 @@
     </section>
     <section class="tweet-box">
       <form>
-          <textarea id="tweet-message" cols="50" placeholder="O que está acontecendo?"></textarea>
+          <textarea id="tweet-message" onkeydown="autoResize()" cols="50" placeholder="O que está acontecendo?"></textarea>
           <p id="wordCount">  </p>
           <button id="button" onclick="twitter(); return false"> Tweet </button>
       </form>

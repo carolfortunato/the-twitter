@@ -37,3 +37,14 @@ function counter() {   // imprime no console, mas não imprime no html
   }
   console.log(max - characters.length);
 }
+
+
+function autoResize()
+    {
+        objTextArea = document.getElementById('tweet-message');
+        while (objTextArea.scrollHeight > objTextArea.offsetHeight)
+        {
+            objTextArea.rows += 1;
+        }
+    }
+    
