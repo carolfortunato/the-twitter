@@ -47,4 +47,3 @@ function autoResize()
             objTextArea.rows += 1;
         }
     }
-    

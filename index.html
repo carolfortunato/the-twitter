@@ -5,32 +5,45 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Twitter</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
   <link href="https://file.myfontastic.com/itB5qJBMGkViNxiEcarVea/icons.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 </head>
 <body>
-  <header class="header">
+  <header class="header d-flex p-2 bd-highlight d-flex justify-content-center">
     <a class="icon-twitter"></a>
-    <h1 class="twitter">Twitter</h1>
+    <h1>Twitter</h1>
   </header>
-  <div class="top">
-    <section class="profile">
+
+  <div class="top row">
+    <div class="col-1"></div>
+    <section class="profile col-3">
       <h2 class="user-name">Carol</h2>
       <p class="user-link">@carolinafort</p>
     </section>
-    <section class="tweet-box">
+    <section class="tweet-box col-7">
       <form>
-          <textarea id="tweet-message" onkeydown="autoResize()" cols="50" placeholder="O que está acontecendo?"></textarea>
-          <p id="wordCount">  </p>
-          <button id="button" onclick="twitter(); return false"> Tweet </button>
+        <textarea id="tweet-message" onkeydown="autoResize()" cols="50" placeholder="O que está acontecendo?"></textarea>
+        <p id="wordCount">  </p>
+        <button id="button" class="btn btn-primary" onclick="twitter(); return false"> Tweet </button>
       </form>
     </section>
+    <div class="col-1"></div>
   </div>
-   <section class="posts">
-     <lu id="timeline"> 
-     </lu>
-   </section>
-   <script src="main.js"></script>
+  
+  <div class="row">
+    <div class="col-1"></div>
+    <section class="posts col-10 d-flex justify-content-center">
+      <ul id="timeline"> 
+      </ul>
+    </section>
+    <div class="col-1"></div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="main.js"></script>
 </body>
 </html>

@@ -6,80 +6,55 @@ body{
   background-color: #E6ECF0;
 }
 .header {
-  display: flex;
   background-color: #00aced;
   height: 70px;
   align-items: center;
   color: white;
-  font-size: 20px;
 }
 .icon-twitter{
-  font-size: 30px;
-  padding-right: 20px;
-  padding-left: 20px;
-}
-h1{
-  text-align: center;
-}
-.top{
-  justify-content: center;
-  display: flex;
+  font-size: 45px;
+  padding: 20px;
 }
 .profile {
-  width: 300px;
   box-sizing: border-box;
   background-color: #FFFFFF;
   border: 1px solid #FFFFFF;
   border-radius: 5px;
-  margin: 20px;
+  margin: 10px;
 }
 .user-name, .user-link {
   padding-top: 10px;
   text-align: center;
   color: #657786;
 }
-
 .tweet-box {
-  width: 600px;
   box-sizing: border-box;
   background-color: #FFFFFF;
   border: 1px solid #FFFFFF;
   border-radius: 5px;
   border-radius: 5px;
   padding: 20px;
-  margin: 20px;
+  margin-top:10px;
+  margin-bottom: 10px;
 }
-
 #tweet-message {
-  border: 2px solid #657786;
+  border: 1px solid #657786;
   border-radius: 5px;
-  height: 100%;
-  font-size: 18px;
-}
-
-#button {
-  background-color: #00aced;
-  border: 1px solid #00aced;
-  border-radius: 3px;
-  margin: 5px;
-  color: #FFFFFF;
-  font-weight: bold;
+  width: 80%;
   font-size: 18px;
 }
 #wordCount {
   font-weight: bold;
 }
 .posts {
-  justify-content: center;
   box-sizing: border-box;
   background-color: #FFFFFF;
   border: 1px solid #FFFFFF;
   border-radius: 5px;
-  margin: auto;
   padding: 20px;
-  width: 70%;
+  margin: 10px;
 }
-lu {
+ul {
   list-style: none;
 }
 li {
