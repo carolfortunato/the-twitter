@@ -1,25 +1,24 @@
 document.getElementById('button').setAttribute('disabled', 'true');
 
-var tweet = document.getElementById('tweet-message');
-var max = 140;
-var characters = document.getElementById('tweet-message').value;
-var wordCount = document.getElementById('wordCount');
+const tweet = document.getElementById('tweet-message');
+const max = 140;
+const char = document.getElementById('tweet-message').value;
+const wordCount = document.getElementById('wordCount');
 wordCount.innerHTML = max;
 
 tweet.addEventListener('keyup', counter);
 
 function twitter() {
-  var today = ' (posted on ' + new Date(); + ' )';
-  var tweet = document.getElementById('tweet-message').value;
-  var element = document.createElement("li");
-  element.appendChild(document.createTextNode(tweet));
+  let today = ' (posted on ' + new Date().toDateString() + ' )';
+  let element = document.createElement("li");
+  element.appendChild(document.createTextNode(tweet.value));
   element.appendChild(document.createTextNode(today));
   document.getElementById('timeline').appendChild(element);
   document.getElementById('tweet-message').value = '';
 }
 
 function counter() {   // imprime no console, mas não imprime no html
-  var characters = document.getElementById('tweet-message').value.split('');
+  let characters = document.getElementById('tweet-message').value.split('');
   wordCount.innerHTML = max;
 
   if (tweet.value !== "" && characters.length <= 140) {
@@ -39,11 +38,9 @@ function counter() {   // imprime no console, mas não imprime no html
 }
 
 
-function autoResize()
-    {
-        objTextArea = document.getElementById('tweet-message');
-        while (objTextArea.scrollHeight > objTextArea.offsetHeight)
-        {
-            objTextArea.rows += 1;
-        }
-    }
+function autoResize() {
+  objTextArea = document.getElementById('tweet-message');
+  while (objTextArea.scrollHeight > objTextArea.offsetHeight){
+    objTextArea.rows += 1;
+  }
+}
