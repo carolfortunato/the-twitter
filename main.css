@@ -40,7 +40,7 @@ body{
 #tweet-message {
   border: 1px solid #657786;
   border-radius: 5px;
-  width: 80%;
+  width: 90%;
   font-size: 18px;
 }
 #wordCount {
@@ -59,4 +59,21 @@ ul {
 }
 li {
   padding: 10px;
+}
+
+@media screen and (max-width: 576px) {
+  .row {
+    display: block;
+    margin: 10px;
+    background-color: #FFFFFF;
+  }
+ .tweet-box, .posts, {
+    display: block;
+    width: 100%;
+    margin: auto;
+  }
+  #tweet-message {
+    width: 100%;
+    font-size: 16px;
+  }
 }

@@ -16,7 +16,11 @@ function twitter() {
   document.getElementById('tweet-message').value = '';
   wordCount.innerHTML = max;
   document.getElementById('button').setAttribute('disabled', 'true');
-}
+
+  // ALTERAR PARA ALGO ASSIM -> 
+    //   var greet = function(person) { 
+    //   return `Olá! Meu nome é ${person.name} e eu tenho ${person.age} anos de idade.`;
+  }
 
 function counter() {   // imprime no console, mas não imprime no html
   let characters = document.getElementById('tweet-message').value.split('');
