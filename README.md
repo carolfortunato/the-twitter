@@ -10,7 +10,7 @@ Esse é um desafio de desenvolvimento responsivo onde é possível postar conte�
 
 ### Screenshot
 
-![screen shot](https://raw.githubusercontent.com/carolfortunato/rede-social/master/screenshot.png)
+![screen shot](https://raw.githubusercontent.com/carolfortunato/twitter/master/screenshot.png)
 
 ### Acesse o site
 [Twitter](https://carolfortunato.github.io/twitter/)
